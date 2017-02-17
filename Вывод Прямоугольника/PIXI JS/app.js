@@ -1,9 +1,8 @@
+let app = new PIXI.Application(document.documentElement.clientWidth, document.documentElement.clientHeight, {backgroundColor : 0x1099bb});
+document.body.appendChild(app.view);
+
 for (let i=0; i<=30; i++) {
 console.time('test');
-
-var app = new PIXI.Application(document.documentElement.clientWidth, document.documentElement.clientHeight, {backgroundColor : 0x1099bb});
-document.body.appendChild(app.view);
-/*
 
     var graphics = new PIXI.Graphics();
 // set a fill and a line style again and draw a rectangle
@@ -12,6 +11,6 @@ graphics.beginFill(0xFF700B, 1);
 graphics.drawRect(i*35+15, 15, 20, 20);
 
 app.stage.addChild(graphics);
-*/
+
     console.timeEnd('test');
 }
